@@ -16,6 +16,15 @@
         gap: 30px;
       }
       /* ✅ Beter voorbeeld van continiuity */
+      .good-nav {
+        display: flex;
+        gap: 0.7rem;
+        list-style: none;
+      }
+      .good-nav li:not(:last-child)::after {
+        content: ">";
+        margin: 1rem;
+      }
     </style>
   </head>
   <body>

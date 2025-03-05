@@ -22,6 +22,19 @@
       }
 
       /* ✅ Goed: Labels en inputvelden gegroepeerd per veld */
+      .good-form {
+        display: flex;
+        flex-direction: column;
+        width: 10rem;
+      }
+
+      .good-form label {
+        margin-top: 2rem;
+      }
+
+      .good-form input {
+        margin-top: 0.2rem;
+      }
     </style>
   </head>
   <body>
@@ -38,7 +51,7 @@
     <h3>
       ✅ Maak er met CSS (en evt. HTML) een goed voorbeeld van - Proximity
     </h3>
-    <form class="bad-form">
+    <form class="good-form">
       <label for="name">Naam:</label>
       <input type="text" id="name" />
       <label for="email">E-mail:</label>
